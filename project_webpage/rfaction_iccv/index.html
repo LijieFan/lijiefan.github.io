@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<title>Making the Invisible Visible: Action Recognition Through Walls and Occlusions</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="action, rfaction, action recognition, human action recognition, radio signals, wireless signals, deep learning, machine learning">
+	<meta name="description" content="Making the Invisible Visible: Action Recognition Through Walls and Occlusions">
+
+    <!-- Bootstrap CSS -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-81724582-4"></script>
+		<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments)};
+			  gtag('js', new Date());
+			  gtag('config', 'UA-81724582-4');
+		</script>
+
+</head>
+
+<style>
+	body {font-size: 16px}
+	.navbar-fixed-top {min-height: 60px;}
+	.navbar-nav>li>a {padding-top: 0px;padding-bottom: 0px;line-height: 60px;font-size: 18px;}
+</style>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar">
+    		<span class="icon-bar"></span>
+    		<span class="icon-bar"></span>
+      	</button>
+      	<h1 style="font-size: 25px; color:#aaa;">RF-Action</h1>
+    </div>
+	    <div class="collapse navbar-collapse" id="Navbar">
+			<ul class="nav navbar-nav navbar-right">
+			  	<li class="active"><a href="#">Home</a></li>
+					<li><a href="#Video">Video</a></li>
+			  	<li><a href="#Paper">Paper</a></li>
+			  	<li><a href="#Alsocheckout">More</a></li>
+		    </ul>
+	    </div>
+	</div>
+</nav>
+
+
+<div class="container" style="padding-top: 80px; font-size: 20px">
+	<div align="center">
+		<h1 class="text-center" aligh="center">Making the Invisible Visible: Action Recognition Through Walls and Occlusions
+		</h1><br>
+
+		<a href="http://www.tianhongli.me"><b>Tianhong Li*</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://lijiefan.me"><b>Lijie Fan*</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://people.csail.mit.edu/mingmin/"><b>Mingmin Zhao</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
+		<b>Yingcheng Liu</b> &nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://people.csail.mit.edu/dina/"><b>Dina Katabi</b></a>
+
+		<br>
+
+	   <a href="http://www.mit.edu/"><font color=black>Massachusetts Institute of Technology</font></a><br>
+    </div>
+</div>
+<div class="container" style="padding-top: 8px; font-size: 15px">
+	<div align="center">
+		(*: First two authors contributed equally; order determined by inverse alphabetical order.)
+	</div>
+</div>
+<br><br>
+
+
+<div class="container">
+	<h3 id="RFSleep" style="padding-top: 80px; margin-top: -80px;">Overview:</h3><hr>
+	<div class="row">
+		<div class="col-md-6">
+			Understanding people’s actions and interactions typically depends on seeing them. Automating the process of action recognition from visual data has been the topic of much research in the computer vision community. But what if it is too dark, or if the person is occluded or behind a wall? In this paper, we introduce a neural network model that can detect human actions through walls and occlusions, and in poor lighting conditions. Our model takes radio frequency (RF) signals as input, generates 3D human skeletons as an intermediate representation, and recognizes actions and interactions of multiple people over time. By translating the input to an intermediate skeleton-based representation, our model can learn from both vision-based and RF-based datasets, and allow the two tasks to help each other. We show that our model achieves comparable accuracy to vision-based action recognition systems in visible scenarios, yet continues to work accurately when people are not visible, hence addressing scenarios that are beyond the limit of today’s vision-based action recognition.
+		</div>
+		<div class="col-md-5">
+			<img class="img-responsive img-rounded" src="images/teaser.png" alt="">
+		</div>
+	</div>
+	</div>
+	<br><br>
+
+<!-- <div class="container">
+	<h3 id="joinus" style="padding-top: 80px; margin-top: -80px;">Open Positions:</h3>
+	We have openings for postdocs and interns! If you are interested in working on exciting projects like RF-Pose, please send an email along with your resume to <a href="http://people.csail.mit.edu/dina/"><b>Prof. Dina Katabi</b></a> at dk@mit.edu.
+</div><br><br> -->
+
+<div class="container">
+	<h3 id="Video" style="padding-top: 80px; margin-top: -80px;">Video:</h3><hr>
+	<div class="col-md-1"></div>
+	<div class="col-md-10">
+	<div class="embed-responsive embed-responsive-16by9">
+    	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UzjBi3xjWR4" frameborder="0" allowfullscreen></iframe>
+  </div>
+	</div>
+</div><br><br>
+
+<div class="container">
+	<h3 id="Paper" style="padding-top: 80px; margin-top: -80px;">Paper:</h3><hr>
+	<div class="row">
+		<div class="col-md-9">
+		<!-- <a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Zhao_Through-Wall_Human_Pose_CVPR_2018_paper.pdf"><b>Making the Invisible Visible: Action Recognition Through Walls and Occlusions</b><br></a> -->
+		<a href="papers/rfaction_iccv.pdf"><b>Making the Invisible Visible: Action Recognition Through Walls and Occlusions</b><br></a>
+		Tianhong Li*, Lijie Fan*, Mingmin Zhao, Yingcheng Liu, Dina Katabi <br>
+		<i><a target="_blank" href="http://iccv2019.thecvf.com/">International Conference on Computer Vision (ICCV), 2019</a></i><br>
+		<!-- <a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Zhao_Through-Wall_Human_Pose_CVPR_2018_paper.pdf">[PDF]<br></a> -->
+		<a href="papers/rfaction_iccv.pdf">[PDF]</a>  <a href="https://arxiv.org/abs/1909.09300">[arXiv]</a> <a href="bibtex/rfaction_iccv.bib">[BibTeX]<br></a>
+		</div>
+	</div>
+</div><br><br>
+
+
+<div class="container">
+	<h3 id="Alsocheckout" style="padding-top: 80px; margin-top: -80px;">Also check out:</h3><hr>
+
+	<div class="row">
+		<div class="col-md-9">
+			<b><a target="_blank" href="http://rfpose3d.csail.mit.edu"> <font color="black">RF-Based 3D Skeletons</font></a></b><br>
+			<a href="http://people.csail.mit.edu/mingmin/">M. Zhao</a>,
+			<a href="http://people.csail.mit.edu/yonglong/">Y. Tian</a>,
+			<a href="http://www.mit.edu/~hangzhao/">H. Zhao</a>,
+			M. Alsheikh,
+			T. Li,
+			R. Hristov,
+			Z. Kabelac,
+			<a href="http://people.csail.mit.edu/dina/">D. Katabi</a> and
+			<a href="http://web.mit.edu/torralba/www/">A. Torralba</a>
+			<br>
+			<i>ACM SIGCOMM, 2018</i><br>
+		</div>
+	</div>
+
+	<br />
+	<div class="row">
+		<div class="col-md-9">
+			<b><a target="_blank" href="http://rfpose.csail.mit.edu"> <font color="black">Through-Wall Human Pose Estimation using Radio Signals</font></a></b><br>
+			<a href="http://people.csail.mit.edu/mingmin/">M. Zhao</a>,
+			T. Li,
+			M. Alsheikh,
+			<a href="http://people.csail.mit.edu/yonglong/">Y. Tian</a>,
+			<a href="http://www.mit.edu/~hangzhao/">H. Zhao</a>,
+			<a href="http://web.mit.edu/torralba/www/">A. Torralba</a> and
+			<a href="http://people.csail.mit.edu/dina/">D. Katabi</a>
+			<br>
+			<i>Computer Vision and Pattern Recognition (CVPR), 2018</i><br>
+		</div>
+	</div>
+
+
+
+</div><br><br>
+
+
+<div id="copyright" align="center">
+© Massachusetts Institute of Technology
+</div>
+</body>
+</html>

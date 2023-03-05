@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--suppress CheckImageSize -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <script src="js/head.js?prefix="></script>
+    <meta name="description" content="Image2Video">
+
+    <title>image2Video</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+
+  <body>
+
+    <div class="outercontainer">
+      <div class="container">
+
+        <div class="content project_title">
+          <h1>Controllable Image-to-Video Translation: A Case Study on Facial Expression Generation</h1>
+        </div>
+
+        <div class="content project_headline">
+          <div class="img" style="text-align:center">
+            <img class="img_responsive" src="images/model.png" alt="image2video" style="margin:auto;max-width:80%"/>
+          </div>
+          <div class="text">
+            <p> Figure 1. Illustration of our model. It consists of two encoders e<sub>0</sub> and e<sub>1</sub>, one decoder d, and two discriminators D<sub>l</sub> and D<sub>g</sub></p>
+          </div>
+        </div>
+        <!--<div class="content project_headline">-->
+          <!--<div class="img" style="text-align:center">-->
+            <!--<img class="img_responsive" src="images/results.jpg" alt="TVNet Result" style="margin:auto;max-width:80%"/>-->
+          <!--</div>-->
+          <!--<div class="text">-->
+            <!--<p>Figure 2: TVNet result</p>-->
+          <!--</div>-->
+        <!--</div>-->
+
+        <div class="content">
+
+        <div class="content">
+          <p class="text">
+            <h3>Abstract</h3>
+            <p>The recent advances in deep learning have made it possible to generate photo-realistic images by using neural networks and even to extrapolate video frames from an input video clip. In this paper, for the sake of both furthering this exploration and our own interest in a realistic application, we study image-to-video translation and particularly focus on the videos of facial expressions. This problem challenges the deep neural networks by another temporal dimension comparing to the image-to-image translation. Moreover, its single input image fails most existing video generation methods that rely on recurrent models. We propose a user-controllable approach so as to generate video clips of various lengths from a single face image. The lengths and types of the expressions are controlled by users. To this end, we design a novel neural network architecture that can incorporate the user input into its skip connections and propose several improvements to the adversarial training method for the neural network. Experiments and user studies verify the effectiveness of our approach. Especially, we would like to highlight that even for the face images in the wild (downloaded from the Web and the authors' own photos), our model can generate high-quality facial expression videos of which about 50% are labeled as real by Amazon Mechanical Turk workers.</p>
+              </p>
+          </div>
+        </div>
+
+      <!--   <div class="content">
+          <p class="text">
+            <h3>Demo Video</h3>
+          </div>
+          <div class="project_headline">
+            <iframe width="720" height="405" src="https://www.youtube.com" frameborder="0" allowfullscreen></iframe>
+            <p>If you cannot access YouTube, please <a href="videos/">download our video here</a>.</p>
+          </p>
+        </div> -->
+
+        <div class="content">
+          <!-- <div class="text"> -->
+            <h3>Preprint</h3>
+            <ul>
+              <li>
+              <div class="title"><a name="">Controllable Image-to-Video Translation: A Case Study on Facial Expression Generation</a></div>
+                <div class="authors">
+                  <a href="http://lijiefan.me">Lijie Fan</a>,
+                  <a href="https://sites.google.com/site/wenbinghuangshomepage/home">Wenbing Huang</a>,
+                  Chuang Gan,
+                  <a href="http://ranger.uta.edu/~huang/">Junzhou Huang</a>, and
+                  <a href="http://boqinggong.info">Boqing Gong</a>
+                </div>
+                <div>
+                  <span class="venue">AAAI 2019 (Oral)</span>
+                  <span class="tag"><a href="papers/image2video_arxiv.pdf">Paper</a></span>
+                  <!--<span class="tag"><a href="talks/poster_cvpr.pdf">Poster</a></span>-->
+                  <span class="tag"><a href="https://arxiv.org/abs/1808.02992">arXiv</a></span>
+                  <span class="tag"><a href="bibtex/image2video_arxiv.bib">BibTeX</a></span>
+                  <!-- <span class="tag"><a href="https://github.com/LijieFan/tvnet">code</a></span> -->
+                  <!--(* indicates equal contributions)-->
+                </div>
+              </li>
+            </ul>
+          <!-- </div> -->
+        </div>
+
+        <!--<div class="content">-->
+          <!--<div class="text">-->
+            <!--<h3>Downloads</h3>-->
+			      <!--<ul class="download">-->
+              <!--<li><a href="">Pretrained models and code for TVNet</a></li>-->
+			      <!--</ul>-->
+          <!--</div>-->
+        <!--</div>-->
+
+      </div>
+    </div>
+
+  </body>
+
+</html>
